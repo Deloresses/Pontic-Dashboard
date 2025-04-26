@@ -1,0 +1,40 @@
+@use '@/app/styles/primitives' as *;
+@use '@/app/styles/semantics' as *;
+
+// ===== PAGE GRID =====
+
+.page {
+  display: grid;
+  grid-template-columns: repeat($grid-lg-columns, 1fr);
+  gap: $grid-lg-gutter;
+  padding-left: $grid-lg-margin;
+  padding-right: $grid-lg-margin;
+  width: 100%;
+  min-height: 100svh;
+}
+
+@media (max-width: $breakpoint-md-max) {
+  .page {
+    grid-template-columns: repeat($grid-md-columns, 1fr);
+    gap: $grid-md-gutter;
+    padding-left: $grid-md-margin;
+    padding-right: $grid-md-margin;
+  }
+}
+
+@media (max-width: $breakpoint-sm-max) {
+  .page {
+    grid-template-columns: repeat($grid-sm-columns, 1fr);
+    gap: $grid-sm-gutter;
+    padding-left: $grid-sm-margin;
+    padding-right: $grid-sm-margin;
+  }
+}
+
+@media (max-width: $breakpoint-default-max) {
+  .page {
+    grid-template-columns: repeat($grid-default-columns, 1fr);
+    padding-left: $grid-default-margin;
+    padding-right: $grid-default-margin;
+  }
+}

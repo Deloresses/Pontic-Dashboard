@@ -1,0 +1,53 @@
+@use '@/app/styles/primitives' as *;
+@use '@/app/styles/semantics' as *;
+
+.heroValue {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $spacing-2; // 8px
+  width: 100%;
+}
+
+.label {
+  color: $section-text-default; // #2F2F2F
+  font-size: $text-label-lg; // 18px
+  font-family: $font-family-sans; // Satoshi
+  font-weight: $font-weight-label; // 500
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.valueWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $section-background-active; // #E62300
+  gap: $spacing-5; // 20px
+  overflow: hidden;
+  padding: $spacing-0; // 0px
+}
+
+.valueMain {
+  color: $section-text-active; // #FFFFFF
+  font-size: $text-display-lg; // 64px
+  font-family: $font-family-mono; // JetBrains Mono
+  font-weight: $font-weight-display; // 500
+  word-wrap: break-word;
+}
+
+.valueDivider {
+  color: $section-text-active; // #FFFFFF
+  font-size: $text-display-lg; // 64px
+  font-family: $font-family-mono; // JetBrains Mono
+  font-weight: $font-weight-display; // 500
+  word-wrap: break-word;
+}
+
+.valueForecast {
+  color: $section-text-active; // #FFFFFF
+  font-size: $text-display-lg; // 64px
+  font-family: $font-family-mono; // JetBrains Mono
+  font-weight: $font-weight-display-secondary; // 300
+  word-wrap: break-word;
+}

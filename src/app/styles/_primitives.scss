@@ -1,0 +1,113 @@
+// ===== COLOURS =====
+
+// Grays
+$gray-100: #fafafa;
+$gray-200: #f0f0f0;
+$gray-400: #c7c7c7;
+$gray-500: #c3c3c3;
+$gray-600: #9e9e9e;
+$gray-700: #2f2f2f;
+
+// Whites
+$white: #ffffff;
+
+// Reds
+$red-600: #e62300;
+
+// Special: White Transparent Gradients
+$white-20: rgba($white, 0.2);
+$white-12: rgba($white, 0.12);
+$white-00: rgba($white, 0);
+
+$gradient-white-fade: linear-gradient(to bottom, $white-20, $white-00);
+$gradient-white-soft: linear-gradient(to bottom, $white-12, $white-00);
+
+// ===== SPACING =====
+$spacing-0: 0px;
+$spacing-05: 2px;
+$spacing-1: 4px;
+$spacing-1-5: 6px;
+$spacing-2: 8px;
+$spacing-3: 12px;
+$spacing-4: 16px;
+$spacing-5: 20px;
+$spacing-6: 24px;
+$spacing-7: 28px;
+$spacing-8: 32px;
+$spacing-9: 40px;
+$spacing-10: 44px;
+$spacing-11: 48px;
+$spacing-12: 56px;
+$spacing-13: 64px;
+
+// ===== TYPOGRAPHY =====
+
+// Font Families
+$font-family-sans: 'Satoshi', sans-serif;
+$font-family-mono: 'JetBrains Mono', monospace;
+
+// Font Sizes
+$font-size-1: 12px;
+$font-size-2: 14px;
+$font-size-3: 16px; // Base
+$font-size-4: 18px;
+$font-size-5: 20px;
+$font-size-6: 24px;
+$font-size-7: 28px;
+$font-size-8: 32px;
+$font-size-9: 40px;
+$font-size-10: 48px;
+$font-size-11: 64px;
+
+// Line Heights
+$line-height-1: 1.2;
+$line-height-2: 1.4;
+$line-height-3: 1.5;
+$line-height-4: 1.6;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// ===== BORDER RADIUS =====
+$radius-sm: 2px;
+
+// ===== STROKE WIDTH =====
+$stroke-width-xs: 1px;
+$stroke-width-sm: 2px;
+
+// ===== SHADOWS =====
+$shadow-1: 0px -2px 0px 0px rgba(0, 0, 0, 0.05) inset,
+           0px 0px 0px 1px rgba(0, 0, 0, 0.25) inset;
+$shadow-2: 0px 1px 2px 0.5px rgba(10, 13, 18, 0.08),
+           0px -2px 0px 0px rgba(0, 0, 0, 0.05) inset,
+           0px 0px 0px 1px rgba(0, 0, 0, 0.25) inset;
+
+
+// ===== BREAKPOINTS AND GRID =====
+
+// Breakpoints
+$breakpoint-default-max: 319px;
+$breakpoint-sm: 320px;
+$breakpoint-sm-max: 599px;
+$breakpoint-md: 600px;
+$breakpoint-md-max: 1135px;
+$breakpoint-lg: 1136px;
+
+// Grid Columns
+$columns-1: 1;
+$columns-4: 4;
+$columns-8: 8;
+$columns-12: 12;
+
+// Grid Gutters
+$gutter-16: 16px;
+$gutter-32: 32px;
+
+// Grid Margins
+$margin-16: 16px;
+$margin-32: 32px;
+$margin-64: 64px;

@@ -1,0 +1,132 @@
+@use './primitives' as *;
+
+// ===== GLOBAL BACKGROUNDS =====
+
+$background-default: $white; // #FFFFFF
+$background-noise: url('/noise.png');
+
+// ===== COMPONENTS =====
+
+// Buttons
+$button-background-default: $gray-100; // #F8F8F8
+$button-background-active: $red-600; // #E62300
+
+$button-text-default: $gray-700; // #2F2F2F
+$button-text-active: $white; // #FFFFFF
+
+// Badges
+$badge-background-default: $gray-700; // #2F2F2F
+$badge-background-active: $red-600; // #E62300
+
+$badge-text-default: $white; // #FFFFFF
+$badge-text-active: $white; // #FFFFFF
+
+// Sections
+$section-background-default: $white; // #FFFFFF
+$section-background-active: $red-600; // #E62300
+
+$section-text-default: $gray-700; // #2F2F2F
+$section-text-active: $white; // #FFFFFF
+
+// ===== GRAPHS / CHARTS =====
+
+// Chart Bars
+$chart-bar-default: $gray-700; // #2F2F2F
+$chart-bar-active: $red-600; // #E62300
+$chart-bar-deactive: $white; // #FFFFFF
+
+// Gridlines and Structure
+$chart-grid-line: $gray-200; // #F0F0F0
+$chart-grid-line-active: $red-600; // #E62300
+$chart-ticker-primary: $gray-700; // #2F2F2F
+$chart-ticker-secondary: $gray-500; // #C3C3C3
+$chart-ticker-active: $red-600; // #E62300
+$chart-border: $gray-400; // #C7C7C7
+
+$chart-text: $gray-600; // #9E9E9E
+
+// ===== DIVIDERS =====
+
+$divider-color: $gray-600; // #9E9E9E
+
+// ===== ICONS =====
+
+$icon-color: $gray-700; // #2F2F2F
+
+// ===== TYPOGRAPHY =====
+
+// Label text
+$text-label-xs: $font-size-1; // 12px
+$text-label-sm: $font-size-2; // 14px
+$text-label-md: $font-size-3; // 16px
+$text-label-lg: $font-size-4; // 18px
+
+// Headings
+$text-heading-sm: $font-size-5; // 20px
+$text-heading-md: $font-size-7; // 28px
+$text-heading-lg: $font-size-8; // 32px
+$text-heading-xl: $font-size-9; // 40px
+
+// Displays
+$text-display-lg: $font-size-11; // 64px
+
+// Default font weights
+$font-weight-label: $font-weight-medium; // 500
+$font-weight-label-secondary: $font-weight-regular; // 400
+$font-weight-heading: $font-weight-medium; // 500
+$font-weight-display: $font-weight-medium; // 500
+$font-weight-display-secondary: $font-weight-light; // 300
+
+// ===== BORDER RADIUS =====
+
+// Buttons
+$button-border-radius: $radius-sm; // 2px
+
+// Chart Bars
+$chart-bar-border-radius: $radius-sm; // 2px
+
+// ===== BORDER WIDTHS =====
+
+// Buttons
+$button-border-width: $stroke-width-sm; // 2px
+
+// Chart Bars
+$chart-bar-border-width: $stroke-width-sm; // 2px
+
+// Chart Lines
+$chart-line-width: $stroke-width-xs; // 1px
+
+// Chart Tickers
+$chart-ticker-width: $stroke-width-xs; // 1px
+
+// Section Dividers
+$divider-width: $stroke-width-xs; // 1px
+
+// ===== SHADOWS =====
+
+// Buttons
+$shadow-button: $shadow-1; // 0px -2px 0px 0px rgba(0, 0, 0, 0.05) inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.25) inset
+
+// Bars
+$shadow-bar: $shadow-2; // 0px 1px 2px 0.5px rgba(10, 13, 18, 0.08), 0px -2px 0px 0px rgba(0, 0, 0, 0.05) inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.25) inset
+
+// ===== GRID SYSTEM =====
+
+// Large screens (≥1136px)
+$grid-lg-columns: $columns-12;
+$grid-lg-gutter: $gutter-32;
+$grid-lg-margin: $margin-64;
+
+// Medium screens (600px–1135px)
+$grid-md-columns: $columns-8;
+$grid-md-gutter: $gutter-32;
+$grid-md-margin: $margin-32;
+
+// Small screens (320px–599px)
+$grid-sm-columns: $columns-4;
+$grid-sm-gutter: $gutter-16;
+$grid-sm-margin: $margin-16;
+
+// Default screens (<320px)
+$grid-default-columns: $columns-1;
+$grid-default-margin: $margin-16;

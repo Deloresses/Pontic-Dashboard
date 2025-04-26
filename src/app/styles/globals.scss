@@ -1,0 +1,43 @@
+@use './primitives' as *;
+
+/* Box Sizing Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base styles */
+body {
+  font-family: $font-family-sans;
+  font-size: $font-size-3;
+  line-height: $line-height-2;
+  color: $gray-700;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Link reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Button reset (optional) */
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Image reset */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
