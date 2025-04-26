@@ -22,14 +22,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $section-background-active; // #E62300
+  background-color: $section-background-default; // #FFFFFF
   gap: $spacing-5; // 20px
   overflow: hidden;
   padding: $spacing-0; // 0px
 }
 
 .valueMain {
-  color: $section-text-active; // #FFFFFF
+  color: $section-text-default; // #2F2F2F
   font-size: $text-display-lg; // 64px
   font-family: $font-family-mono; // JetBrains Mono
   font-weight: $font-weight-display; // 500
@@ -37,7 +37,7 @@
 }
 
 .valueDivider {
-  color: $section-text-active; // #FFFFFF
+  color: $section-text-default; // #2F2F2F
   font-size: $text-display-lg; // 64px
   font-family: $font-family-mono; // JetBrains Mono
   font-weight: $font-weight-display; // 500
@@ -45,9 +45,14 @@
 }
 
 .valueForecast {
-  color: $section-text-active; // #FFFFFF
+  color: $section-text-default; // #2F2F2F
   font-size: $text-display-lg; // 64px
   font-family: $font-family-mono; // JetBrains Mono
   font-weight: $font-weight-display-secondary; // 300
   word-wrap: break-word;
+}
+
+.active {
+  background-color: $section-background-active; // #E62300
+  color: $section-text-active; // #FFFFFF
 }
