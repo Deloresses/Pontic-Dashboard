@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pontic Dashboard
+
+Pontic Dashboard is a modern, responsive web application for dental professionals, providing financial clarity, tracking, and planning tools. Built using Next.js 14, SCSS, and a custom design system.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the dashboard.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- Next.js 14 (App Router)
+- SCSS Modules
+- Custom Design System (Primitives + Semantics)
+- Supabase (for backend/data)
+- TypeScript
+- Vercel (for deployment)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+/src
+  /app
+    /components
+    /styles
+    layout.tsx
+    page.tsx
+/public
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Development Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- SCSS tokens are separated into `_primitives.scss` and `_semantics.scss`.
+- Components are modular and import their own SCSS modules.
+- Layout and page structure use CSS Grid based on a 12-column responsive system.
+- Global styles are handled in `globals.scss` and `globals.module.scss`.
+
+---
+
+## Deployment
+
+We recommend deploying to [Vercel](https://vercel.com/).
+
+```bash
+vercel
+```
+
+---
+
+## Contributing
+
+Currently a solo project — contributions and improvements are welcome in the future!
+
+---
+
+# .gitignore
+
+# Node.js
+node_modules
+.next
+out
+dist
+
+# System
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
