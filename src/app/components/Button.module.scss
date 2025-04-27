@@ -1,16 +1,15 @@
-@use '@/app/styles/primitives' as *;
 @use '@/app/styles/semantics' as *;
 
 .button {
   background-color: $button-background-default; // Gray100
   border: none;
-  padding: $spacing-2 $spacing-4;
+  padding: $spacing-md $spacing-xl;
   border-radius: $button-border-radius;
-  font-family: $font-family-sans;
+  font-family: $font-family-body;
   font-size: $text-label-md;
   font-weight: $font-weight-label-secondary;
   color: $section-text-default;
-  box-shadow: $shadow-button;
+  box-shadow: $shadow-button-default;
   cursor: pointer;
   transition: background-color 0.2s ease, box-shadow 0.25s ease, color 0.3s ease;
 

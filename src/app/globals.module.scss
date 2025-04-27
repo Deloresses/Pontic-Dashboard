@@ -1,6 +1,3 @@
-
-
-
 @use '@/app/styles/semantics' as *;
 
 // ===== GLOBAL UTILITY CLASSES =====
@@ -14,12 +11,12 @@
   padding-left: $grid-lg-margin;
   padding-right: $grid-lg-margin;
 
-  @media (max-width: $breakpoint-md-max) {
+  @media (max-width: $breakpoint-t-max) {
     padding-left: $grid-md-margin;
     padding-right: $grid-md-margin;
   }
 
-  @media (max-width: $breakpoint-sm-max) {
+  @media (max-width: $breakpoint-m-max) {
     padding-left: $grid-sm-margin;
     padding-right: $grid-sm-margin;
   }

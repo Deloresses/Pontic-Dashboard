@@ -1,18 +1,17 @@
-@use '@/app/styles/primitives' as *;
 @use '@/app/styles/semantics' as *;
 
 .heroValue {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: $spacing-2; // 8px
+  gap: $spacing-md; // 8px
   width: 100%;
 }
 
 .label {
   color: $section-text-default; // #2F2F2F
   font-size: $text-label-lg; // 18px
-  font-family: $font-family-sans; // Satoshi
+  font-family: $font-family-body; // Satoshi
   font-weight: $font-weight-label; // 500
   text-align: center;
   word-wrap: break-word;
@@ -23,9 +22,9 @@
   align-items: center;
   justify-content: center;
   background-color: $section-background-default; // #FFFFFF
-  gap: $spacing-5; // 20px
+  gap: $spacing-xl; // 20px
   overflow: hidden;
-  padding: $spacing-0; // 0px
+  padding: $spacing-none; // 0px
 }
 
 .valueMain {

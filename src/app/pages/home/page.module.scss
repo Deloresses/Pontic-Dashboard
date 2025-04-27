@@ -1,4 +1,3 @@
-@use '@/app/styles/primitives' as *;
 @use '@/app/styles/semantics' as *;
 
 // ===== PAGE GRID =====
@@ -13,7 +12,7 @@
   min-height: 100svh;
 }
 
-@media (max-width: $breakpoint-md-max) {
+@media (max-width: $breakpoint-t) {
   .page {
     grid-template-columns: repeat($grid-md-columns, 1fr);
     gap: $grid-md-gutter;
@@ -22,19 +21,11 @@
   }
 }
 
-@media (max-width: $breakpoint-sm-max) {
+@media (max-width: $breakpoint-m) {
   .page {
     grid-template-columns: repeat($grid-sm-columns, 1fr);
     gap: $grid-sm-gutter;
     padding-left: $grid-sm-margin;
     padding-right: $grid-sm-margin;
-  }
-}
-
-@media (max-width: $breakpoint-default-max) {
-  .page {
-    grid-template-columns: repeat($grid-default-columns, 1fr);
-    padding-left: $grid-default-margin;
-    padding-right: $grid-default-margin;
   }
 }

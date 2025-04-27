@@ -1,17 +1,31 @@
 @use './primitives' as *;
 
+// ===== SPACING =====
+$spacing-none: $spacing-0; // 0px
+$spacing-2xs: $spacing-05; // 2px
+$spacing-xs: $spacing-1; // 4px
+$spacing-sm: $spacing-1-5; // 6px
+$spacing-md: $spacing-2; // 8px
+$spacing-lg: $spacing-3; // 12px
+$spacing-xl: $spacing-4; // 16px
+$spacing-2xl: $spacing-5; // 20px
+$spacing-3xl: $spacing-6; // 24px
+$spacing-4xl: $spacing-7; // 28px
+$spacing-5xl: $spacing-8; // 32px
+
 // ===== GLOBAL BACKGROUNDS =====
 
 $background-default: $white; // #FFFFFF
 $background-noise: url('/noise.png');
 
-// ===== COMPONENTS =====
+// ===== COMPONENTS CLOLOURS =====
 
 // Buttons
 $button-background-default: $gray-100; // #FAFAFA
 $button-backgound-pressed: $gray-200; // #F0F0F0
 $button-background-active: $red-600; // #E62300
 
+// Button text
 $button-text-default: $gray-700; // #2F2F2F
 $button-text-active: $white; // #FFFFFF
 
@@ -19,6 +33,7 @@ $button-text-active: $white; // #FFFFFF
 $badge-background-default: $gray-700; // #2F2F2F
 $badge-background-active: $red-600; // #E62300
 
+// Badge text
 $badge-text-default: $white; // #FFFFFF
 $badge-text-active: $white; // #FFFFFF
 
@@ -29,7 +44,7 @@ $section-background-active: $red-600; // #E62300
 $section-text-default: $gray-700; // #2F2F2F
 $section-text-active: $white; // #FFFFFF
 
-// ===== GRAPHS / CHARTS =====
+// ===== GRAPHS / CHARTS CLOURS =====
 
 // Chart Bars
 $chart-bar-default: $gray-700; // #2F2F2F
@@ -44,17 +59,23 @@ $chart-ticker-secondary: $gray-500; // #C3C3C3
 $chart-ticker-active: $red-600; // #E62300
 $chart-border: $gray-400; // #C7C7C7
 
+// Chart text
 $chart-text: $gray-600; // #9E9E9E
 
-// ===== DIVIDERS =====
+// ===== DIVIDERS CLOURS =====
 
 $divider-color: $gray-600; // #9E9E9E
 
-// ===== ICONS =====
+// ===== ICONS COLOURS =====
 
 $icon-color: $gray-700; // #2F2F2F
 
 // ===== TYPOGRAPHY =====
+
+// Font families
+
+$font-family-body: $font-family-sans; // Satoshi
+$font-family-mono: $font-family-monospace; // JetBrains Mono
 
 // Label text
 $text-label-xs: $font-size-1; // 12px
@@ -71,12 +92,16 @@ $text-heading-xl: $font-size-9; // 40px
 // Displays
 $text-display-lg: $font-size-11; // 64px
 
-// Default font weights
+// Font weights
 $font-weight-label: $font-weight-medium; // 500
 $font-weight-label-secondary: $font-weight-regular; // 400
 $font-weight-heading: $font-weight-medium; // 500
 $font-weight-display: $font-weight-medium; // 500
 $font-weight-display-secondary: $font-weight-light; // 300
+
+//Line height
+$line-height-default: $line-height-2; // 1.4
+
 
 // ===== BORDER RADIUS =====
 
@@ -103,10 +128,15 @@ $chart-ticker-width: $stroke-width-xs; // 1px
 // Section Dividers
 $divider-width: $stroke-width-xs; // 1px
 
+// ===== STROKE WIDTH =====
+
+$stroke-strong: $stroke-width-sm; // 2px
+$stroke-thin: $stroke-width-xs; // 1px
+
 // ===== SHADOWS =====
 
 // Buttons
-$shadow-button: $shadow-1; // 0px -2px 0px 0px rgba(0, 0, 0, 0.05) inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.25) inset
+$shadow-button-default: $shadow-1; // 0px -2px 0px 0px rgba(0, 0, 0, 0.05) inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.25) inset
 $shadow-button-hover: $shadow-3; // 0px 0px 0px 1px rgba(0, 0, 0, 0.25) inset
 $shadow-button-pressed: $shadow-0; // 0px -1px 0px rgba(0, 0, 0, 0.05) inset
 
@@ -133,3 +163,9 @@ $grid-sm-margin: $margin-16;
 // Default screens (<320px)
 $grid-default-columns: $columns-1;
 $grid-default-margin: $margin-16;
+
+// ===== BREAKPOINTS =====
+
+$breakpoint-d: $breakpoint-lg;
+$breakpoint-t: $breakpoint-md;
+$breakpoint-m: $breakpoint-sm;
