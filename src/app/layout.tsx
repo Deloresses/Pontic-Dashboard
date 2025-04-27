@@ -1,4 +1,4 @@
-import "@/app/styles/globals.scss";
+import "@/app/globals.scss";
 import type { Metadata } from "next";
 import "./layout.module.scss";
 
